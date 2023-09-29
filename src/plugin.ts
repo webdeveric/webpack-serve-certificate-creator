@@ -5,7 +5,7 @@ import { getCertificate } from './utils.js';
 import type { ServerCertificateCreatorContext, ServerCertificateCreatorOptions } from './types.js';
 import type { Compiler, WebpackPluginInstance } from 'webpack';
 
-export const PLUGIN_NAME = 'server-certificate-creator';
+export const PLUGIN_NAME = 'webpack-serve-certificate-creator';
 
 export class WebpackServeCertificateCreator implements WebpackPluginInstance {
   constructor(private readonly options: Partial<ServerCertificateCreatorOptions> = {}) {}
