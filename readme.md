@@ -1,5 +1,7 @@
 # `WebpackServeCertificateCreator`
 
+[![Node.js CI](https://github.com/webdeveric/webpack-serve-certificate-creator/actions/workflows/node.js.yml/badge.svg)](https://github.com/webdeveric/webpack-serve-certificate-creator/actions/workflows/node.js.yml)
+
 ## Install
 
 ```sh
@@ -33,6 +35,6 @@ Add the plugin to your `plugins`.
         keySize: 4096,
       },
     }),
-  ]
+  ];
 }
 ```
