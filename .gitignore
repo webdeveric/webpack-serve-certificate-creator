@@ -1,0 +1,5 @@
+.certificate-cache
+node_modules
+coverage
+dist
+/private/
