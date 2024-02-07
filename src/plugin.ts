@@ -55,7 +55,9 @@ export class WebpackServeCertificateCreator implements WebpackPluginInstance {
 
     const certificate = getCertificate(options, context);
 
-    compiler.options.devServer ??= {};
+    if (typeof compiler.options.devServer !== 'object' || !compiler.options.devServer) {
+      compiler.options.devServer = {};
+    }
 
     compiler.options.devServer.server ??= {};
 
