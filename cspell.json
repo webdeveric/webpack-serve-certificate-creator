@@ -1,7 +1,7 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["memfs", "selfsigned", "unstub", "vitest"],
+  "words": ["memfs", "selfsigned", "unstub", "vitest", "typecheck"],
   "flagWords": [],
   "ignorePaths": ["pnpm-lock.yaml", "package.json", "node_modules", ".vscode"],
   "languageSettings": [

@@ -58,33 +58,33 @@
     "coverage": "vitest run  -c vitest.config.mts --coverage",
     "prepack": "pnpm build",
     "prepublishOnly": "pnpm typecheck && pnpm spellcheck && pnpm lint && pnpm coverage",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "prettier": "@webdeveric/prettier-config",
   "peerDependencies": {
     "webpack": ">=5"
   },
   "devDependencies": {
-    "@types/loader-utils": "^2.0.4",
-    "@types/node": "^18.18.1",
-    "@vitest/coverage-v8": "^0.34.6",
+    "@types/loader-utils": "^2.0.6",
+    "@types/node": "^18.19.14",
+    "@vitest/coverage-v8": "^1.2.2",
     "@webdeveric/eslint-config-ts": "^0.7.1",
     "@webdeveric/prettier-config": "^0.2.0",
-    "cspell": "^7.3.7",
-    "eslint": "^8.50.0",
-    "eslint-config-prettier": "^9.0.0",
+    "cspell": "^8.3.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.28.1",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
-    "memfs": "^4.5.0",
-    "prettier": "^3.0.3",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2",
+    "memfs": "^4.6.0",
+    "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
-    "typescript": "^5.2.2",
-    "vitest": "^0.34.6",
-    "webpack": "^5.88.2"
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2",
+    "webpack": "^5.90.1"
   },
   "dependencies": {
-    "selfsigned": "^2.1.1"
+    "selfsigned": "^2.4.1"
   }
 }
