@@ -6,6 +6,7 @@ export default defineConfig({
     setupFiles: './setupVitest.mts',
     include: ['./test/**/*.test.ts'],
     coverage: {
+      all: false,
       provider: 'v8',
     },
   },
