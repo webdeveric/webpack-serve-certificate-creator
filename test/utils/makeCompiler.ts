@@ -1,3 +1,4 @@
+import assert from 'node:assert';
 import path from 'node:path';
 
 import { createFsFromVolume, Volume } from 'memfs';
@@ -14,7 +15,11 @@ export function makeCompiler(config: Configuration): Compiler {
     },
   });
 
-  compiler.outputFileSystem = createFsFromVolume(new Volume());
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  compiler.outputFileSystem = createFsFromVolume(new Volume()) as any;
+
+  assert(compiler.outputFileSystem, 'outputFileSystem is not defined');
+
   compiler.outputFileSystem.join = path.join.bind(path);
 
   return compiler;
