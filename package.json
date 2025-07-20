@@ -1,6 +1,6 @@
 {
   "name": "webpack-serve-certificate-creator",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "webpack plugin to generate SSL certificate for local development",
   "license": "MIT",
   "author": {
